@@ -1,3 +1,5 @@
+package ru.yaro.service;
+
 public interface Calculator {
     int addition(int firstNumber, int secondNumber);
     int subtraction(int firstNumber, int secondNumber);

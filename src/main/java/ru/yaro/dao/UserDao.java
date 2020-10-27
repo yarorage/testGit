@@ -1,3 +1,7 @@
+package ru.yaro.dao;
+
+import ru.yaro.model.User;
+
 import java.sql.SQLException;
 import java.util.List;
 

@@ -1,4 +1,7 @@
+package ru.yaro.dao;
+
 import org.apache.ibatis.annotations.Param;
+import ru.yaro.model.User;
 
 import java.util.List;
 

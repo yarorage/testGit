@@ -1,3 +1,5 @@
+package ru.yaro.service;
+
 public class CalculatorImpl implements Calculator {
 
     public int addition(int firstNumber, int secondNumber) {

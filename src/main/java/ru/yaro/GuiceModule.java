@@ -1,3 +1,5 @@
+package ru.yaro;
+
 import com.google.inject.AbstractModule;
 import com.google.inject.Provides;
 import org.apache.ibatis.mapping.Environment;
@@ -7,6 +9,12 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.apache.ibatis.transaction.TransactionFactory;
 import org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory;
 import org.sqlite.SQLiteDataSource;
+import ru.yaro.Main;
+import ru.yaro.dao.UserDao;
+import ru.yaro.dao.UserDaoImpl;
+import ru.yaro.dao.UserMapper;
+import ru.yaro.service.Calculator;
+import ru.yaro.service.CalculatorImpl;
 
 import javax.inject.Singleton;
 import java.net.URISyntaxException;
@@ -22,7 +30,7 @@ public class GuiceModule extends AbstractModule {
     @Provides
     @Singleton
     public SqlSessionFactory createSQLSessionFactory() {
-        URL resource = Main.class.getResource("mydatabase.db");
+        URL resource = Main.class.getClassLoader().getResource("mydatabase.db");
         String path = null;
 
         {

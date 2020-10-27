@@ -1,3 +1,5 @@
+package ru.yaro.model;
+
 public class User {
 
     private String login;

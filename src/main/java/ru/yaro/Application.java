@@ -1,4 +1,9 @@
+package ru.yaro;
+
 import com.google.inject.Inject;
+import ru.yaro.dao.UserDao;
+import ru.yaro.model.User;
+import ru.yaro.service.Calculator;
 
 import java.sql.SQLException;
 import java.util.List;

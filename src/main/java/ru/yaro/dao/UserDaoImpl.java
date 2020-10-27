@@ -1,11 +1,10 @@
+package ru.yaro.dao;
+
 import com.google.inject.Inject;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
+import ru.yaro.model.User;
 
-import java.net.URISyntaxException;
-import java.net.URL;
-import java.sql.*;
-import java.util.ArrayList;
 import java.util.List;
 
 public class UserDaoImpl implements UserDao {
