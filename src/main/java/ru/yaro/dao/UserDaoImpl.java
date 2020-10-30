@@ -3,7 +3,7 @@ package ru.yaro.dao;
 import com.google.inject.Inject;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
-import ru.yaro.model.User;
+import ru.yaro.gwt.shared.User;
 
 import java.util.List;
 

@@ -1,10 +1,12 @@
-package ru.yaro.model;
+package ru.yaro.gwt.shared;
 
-public class User {
+import java.io.Serializable;
 
-    private String login;
-    private String password;
-    private String name;
+public class User implements Serializable {
+
+    public String login;
+    public String password;
+    public String name;
 
     public User() {
 

@@ -51,7 +51,9 @@ public class GuiceModule extends AbstractModule {
         configuration.addMapper(UserMapper.class);
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(configuration);
         return sqlSessionFactory;
+
     }
+
 }
 
 

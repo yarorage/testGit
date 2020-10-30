@@ -1,13 +1,12 @@
 package ru.yaro.dao;
 
-import ru.yaro.model.User;
+import ru.yaro.gwt.shared.User;
 
-import java.sql.SQLException;
 import java.util.List;
 
 public interface UserDao {
-    User getUserByLogin(String login) throws SQLException;
-    List<User> getAllUsers() throws SQLException;
+    User getUserByLogin(String login);
+    List<User> getAllUsers();
     void createUser(String login, String password, String name);
 }
 

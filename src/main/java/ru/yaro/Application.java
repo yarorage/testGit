@@ -2,7 +2,7 @@ package ru.yaro;
 
 import com.google.inject.Inject;
 import ru.yaro.dao.UserDao;
-import ru.yaro.model.User;
+import ru.yaro.gwt.shared.User;
 import ru.yaro.service.Calculator;
 
 import java.sql.SQLException;
